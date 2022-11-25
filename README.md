@@ -33,7 +33,7 @@ Note that usage of the function requires the following to be already installed i
  - g_a       : Numpy array of size J containing the weight for demand at price p_a in parameter of interest. 
  - g_b       : Numpy array of size J containing the weight for demand at price p_b in parameter of interest. 
  - g_ab      : Numeric value corresponding to the weight for the average willing-to-pay for price decrease from p_b to p_a. 
- - spec      : Specification equal "NPB" (specification (i) above), "NPS" (specification (ii) above), and "PS" (specification (iii) above). (*Optional*, default = "NPB")
+ - spec      : Specification equal to "NPB" (specification (i) above), "NPS" (specification (ii) above), or "PS" (specification (iii) above). (*Optional*, default = "NPB")
  - K         : Degree of polynomial if spec = "PS". (*Optional*, default = 3)
  - p_lower   : Numpy array of size J corresponding to lower value of price support. (*Optional*, default = min across p_a,p_b,P_obs)
  - p_upper   : Numpy array of size J corresponding to upper value of price support. (*Optional*, default = max across p_a,p_b,P_obs)
