@@ -38,7 +38,7 @@ Note that usage of the function requires the following to be already installed i
  - n         : sample size (*Not optional* if conf = 1)
  - share_b   : Dictionary where each entry is a share computed in bootstrap draw (*Not optional* if conf = 1)
  - Sigma     : Estimate of var/covaraince matrix of shares. (*Optional*, default = "bs" which computes using bootstrap, i.e. using share and share_b)
- - level     : Level for confidence interval (*Optional*, default = 0.95)
+ - level     : Level for confidence interval (*Optional*, default = 0.90)
  - incr      : Increment to use in test inversion procedure for confidence interval construction (*Optional*, default = "auto: which constructs using standard deviation of bootstrap bound estimates)
 
 **Output:**
