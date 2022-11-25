@@ -10,13 +10,15 @@ Samuel Norris, University of British Columbia
 
 # Installation
 
-Store function in same directory as main file and import the function by copy pasting the following at the top of the file:
+Store function (i.e. the file np.demand) in same directory as main file and import the function by copy pasting the following at the top of the file:
 
     from npdemand import *
 
 Note that usage of the function requires the following to be already installed in python: Gurobi, sympy, and numpy.
 
 # Implementation
+
+The file npdemand_ex.py provides a simple illustration of the function using simulated data. Below we summarize syntax of the function.
 
 **Syntax:**
 
