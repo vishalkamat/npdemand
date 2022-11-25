@@ -1,8 +1,6 @@
 # npdemand: Python package for nonparametric analysis of counterfactual demand
 
-This Python package implements the tools in [Kamat and Norris (2022)](https://arxiv.org/abs/2002.00103) to evaluate the average willingness to for a price decrease as well as the effect on demand of a general price change in the presence of exogenous, discrete variation of prices. 
-
-It allows for three specification of demand: (i) nonparametric demand with only assuming demand for an alternative increases with the price of other alternatives; (ii) specification (i) along with additionally imposing that demand is separable; and (iii) specfication (ii) along with additionally imposing that demand is parameterized to be polynomial of degree K in each price.
+This Python package implements the tools in [Kamat and Norris (2022)](https://arxiv.org/abs/2002.00103) to evaluate the average willingness to for a price decrease as well as the effect on demand of a general price change in the presence of exogenous, discrete variation of prices. It allows for three specification of demand: (i) nonparametric demand with only assuming demand for an alternative increases with the price of other alternatives; (ii) specification (i) along with additionally imposing that demand is separable; and (iii) specfication (ii) along with additionally imposing that demand is parameterized to be polynomial of degree K in each price.
 
 # Contributors
 
@@ -26,13 +24,13 @@ Note that usage of the function requires the following to be already installed i
 
 **Arguments:**
 
- - p_a       : Numpy array of size J containing higher prices in price decrease. 
+ - p_a       : Numpy array of size J (which is the number of alternatives) containing higher prices in price decrease. 
  - p_b       : Numpy array of size J containing lower prices in price decrease. 
  - P_obs     : List of numpy arrays of size J containing the observed discrete variation. 
  - share     : List of numpy arrays of size J containing the shares at each observed price. 
  - g_a       : Numpy array of size J containing the weight for demand at price p_a in parameter of interest. 
  - g_b       : Numpy array of size J containing the weight for demand at price p_b in parameter of interest. 
- - g_ab      : Numeric value corresponding to the weight for the average willing-to-pay for price decrease from p_b to p_a. 
+ - g_ab      : Numeric value corresponding to the weight for the average willingness to pay for price decrease from p_a to p_b. Set to 0 if p_b is not smaller than p_a.
  - spec      : Specification equal to "NPB" (specification (i) above), "NPS" (specification (ii) above), or "PS" (specification (iii) above). (*Optional*, default = "NPB")
  - K         : Degree of polynomial if spec = "PS". (*Optional*, default = 3)
  - p_lower   : Numpy array of size J corresponding to lower value of price support. (*Optional*, default = min across p_a,p_b,P_obs)
