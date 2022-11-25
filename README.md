@@ -22,7 +22,7 @@ Note that usage of the function requires the following to be already installed i
 
 **Syntax:**
 
-    npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec,K,p_lower,p_upper,grid_size,conf,n,share_b,Sigma,level,incr)
+    npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec="NPB",K="3",p_lower=[],p_upper=[],grid_size=5,conf=0,n=0,share_b={},Sigma="bs",level=0.95,incr="auto")
 
 **Arguments:**
 
@@ -41,9 +41,9 @@ Note that usage of the function requires the following to be already installed i
  - conf      : If equal to 1 then construct confidence intervals. (*Optional*, default = 0)
  - n         : sample size (*Not optional* if conf = 1)
  - share_b   : Dictionary where each entry is a share computed in bootstrap draw (*Not optional* if conf = 1)
- - Sigma     : Estimate of var/covaraince matrix of shares. (*Optional*, default = Compute using bootstrap, i.e. using share and share_b)
+ - Sigma     : Estimate of var/covaraince matrix of shares. (*Optional*, default = "bs" which computes using bootstrap, i.e. using share and share_b)
  - level     : Level for confidence interval (*Optional*, default = 0.95)
- - incr      : Increment to use in test inversion procedure for confidence interval construction (*Optional*, default = construct using standard deviation of bootstrap bound estimates)
+ - incr      : Increment to use in test inversion procedure for confidence interval construction (*Optional*, default = "auto: which constructs using standard deviation of bootstrap bound estimates)
 
 **Output:**
 
