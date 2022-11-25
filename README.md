@@ -10,7 +10,7 @@ Samuel Norris, University of British Columbia
 
 # Installation
 
-Store function (i.e. the file np.demand) in same directory as main file and import the function by copy pasting the following at the top of the file:
+Store function (i.e. the file np.demand) in same directory as main file running the function and import the function by copy pasting the following at the top of the main file:
 
     from npdemand import *
 
