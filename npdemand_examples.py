@@ -104,7 +104,7 @@ output = npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,conf=1,share_b=share_b,n=n,sp
 
 #------------------------------------------------------------------------------        
 # Evaluate effect on demand of choosing alternative 0 of counterfactual general price change
-# from p_a to an intervmediate discount of 250 that doesn't applies to alternative 2, 
+# from p_a to an intermediate discount of 250 that doesn't applies to alternative 2, 
 # which has a price rise of 500, i.e. [0,750,2000,2750,3750] 
 #------------------------------------------------------------------------------
 

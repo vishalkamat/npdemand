@@ -299,7 +299,7 @@ def npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec='NPB',K=3,grid_size=5,conf=0,
             return
         
     #Give error if it is not price decrease then g_ab has to be set to 0
-    if sum([1*(p_a[i] < p_b[i]) for i in range(len(p_a))]) > 0: 
+    if (sum([1*(p_a[i] < p_b[i]) for i in range(len(p_a))]) > 0) and g_ab!=0: 
         print("Warning: p_b is not smaller than p_a. g_ab set to 0.")
         g_ab = 0
     
@@ -1130,7 +1130,7 @@ def npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec='NPB',K=3,grid_size=5,conf=0,
     print("Upper bound:", est[1])
     print("------------------------------------")
     if conf == 1:
-        print(100*level,"% Confidence Intervals")
+        print("{}% Confidence Intervals".format(int(100*level)))
         print("------------------------------------")
         print("Lower value:", ci[0])
         print("Upper value:", ci[1])
