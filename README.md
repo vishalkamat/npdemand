@@ -18,7 +18,7 @@ Note that usage of the function requires the following to be already installed i
 
 # Implementation
 
-The file npdemand_ex.py provides a simple illustration of the function using simulated data. Below we summarize syntax of the function.
+The file npdemand_examples.py provides a simple illustration of the function using simulated data. Below we summarize syntax of the function.
 
 **Syntax:**
 
