@@ -33,7 +33,7 @@ Note that usage of the function requires the following to be already installed i
  - g_ab      : Numeric value corresponding to the weight for the average willingness to pay for price decrease from p_a to p_b. Set to 0 if p_b is not smaller than p_a.
  - spec      : Specification equal to "NPB" (specification (i) above), "NPS" (specification (ii) above), or "PS" (specification (iii) above). (*Optional*, default = "NPB")
  - K         : Degree of polynomial if spec = "PS". (*Optional*, default = 3)
- - grid_size : Size of gequidistant grid between p_lower and p_upper at which parameter restrictions are evluated. (*Optional*, default = 5)
+ - grid_size : Size of equidistant grid points at which polynomial restrictions are evluated under spec = "PS". (*Optional*, default = 5)
  - conf      : If equal to 1 then construct confidence intervals. (*Optional*, default = 0)
  - n         : sample size (*Not optional* if conf = 1)
  - share_b   : Dictionary where each entry is a share computed in bootstrap draw (*Not optional* if conf = 1)
