@@ -20,7 +20,7 @@ Note that usage of the function requires the following to be already installed i
 
 **Syntax:**
 
-    npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec="NPB",K="3",p_lower=[],p_upper=[],grid_size=5,conf=0,n=0,share_b={},Sigma="bs",level=0.95,incr="auto")
+    npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec="NPB",K="3",grid_size=5,conf=0,n=0,share_b={},Sigma="bs",level=0.95,incr="auto")
 
 **Arguments:**
 
@@ -33,8 +33,6 @@ Note that usage of the function requires the following to be already installed i
  - g_ab      : Numeric value corresponding to the weight for the average willingness to pay for price decrease from p_a to p_b. Set to 0 if p_b is not smaller than p_a.
  - spec      : Specification equal to "NPB" (specification (i) above), "NPS" (specification (ii) above), or "PS" (specification (iii) above). (*Optional*, default = "NPB")
  - K         : Degree of polynomial if spec = "PS". (*Optional*, default = 3)
- - p_lower   : Numpy array of size J corresponding to lower value of price support. (*Optional*, default = min across p_a,p_b,P_obs)
- - p_upper   : Numpy array of size J corresponding to upper value of price support. (*Optional*, default = max across p_a,p_b,P_obs)
  - grid_size : Size of gequidistant grid between p_lower and p_upper at which parameter restrictions are evluated. (*Optional*, default = 5)
  - conf      : If equal to 1 then construct confidence intervals. (*Optional*, default = 0)
  - n         : sample size (*Not optional* if conf = 1)
