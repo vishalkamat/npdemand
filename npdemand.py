@@ -1121,7 +1121,7 @@ def npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec='NPB',K=3,grid_size=5,conf=0,
         print("------------------------------------------------")
     elif spec == "PS":
         print("-----------------------------------------------------------")
-        print("Parametric sepraable demand with polynomial degree of", K)
+        print("Parametric separable demand with polynomial degree of", K)
         print("-----------------------------------------------------------")
     
     print("Estimated Bounds")
