@@ -44,10 +44,10 @@ Note that usage of the function requires the following to be already installed i
 **Output:**
 
 Stored as numpy array, say output, where: 
- - output[0] = lower bound estimate
- - output[1] = upper bound estimate
- - output[2] = lower value of confidence interval if conf = 1
- - output[3] - upper value of confidence interval if conf = 1
+ - output[0] : Lower bound estimate
+ - output[1] : Upper bound estimate
+ - output[2] : Lower value of confidence interval if conf = 1
+ - output[3] : Upper value of confidence interval if conf = 1
 
 # Comments and Issues
 
