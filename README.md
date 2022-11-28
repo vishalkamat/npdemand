@@ -1,6 +1,6 @@
 # npdemand: Python package for nonparametric analysis of counterfactual demand
 
-This Python package implements the tools in [Kamat and Norris (2022)](https://arxiv.org/abs/2002.00103) to evaluate the average willingness to for a price decrease as well as the effect on demand of a general price change in the presence of exogenous, discrete variation of prices. It allows for three specification of demand: (i) nonparametric demand with only assuming demand for an alternative increases with the price of other alternatives; (ii) specification (i) along with additionally imposing that demand is separable; and (iii) specfication (ii) along with additionally imposing that demand is parameterized to be polynomial of degree K in each price.
+This Python package implements the tools in [Kamat and Norris (2022)](https://arxiv.org/abs/2002.00103) to evaluate the average willingness to for a price decrease as well as the effect on demand of a general price change in the presence of exogenous, discrete variation of prices. It allows for three specifications of demand: (i) nonparametric demand with only assuming demand for an alternative increases with the price of other alternatives; (ii) specification (i) along with additionally imposing that demand is separable; and (iii) specfication (ii) along with additionally imposing that demand is parameterized to be polynomial of degree K in each price.
 
 # Contributors
 
@@ -22,7 +22,7 @@ The file npdemand_examples.py provides a simple illustration of the function usi
 
 **Syntax:**
 
-    npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec="NPB",K="3",grid_size=5,conf=0,n=0,share_b={},Sigma="bs",level=0.95,incr="auto")
+    npdemand(p_a,p_b,P_obs,share,g_a,g_b,g_ab,spec="NPB",K="3",grid_size=5,conf=0,n=0,share_b={},Sigma="bs",level=0.90,incr="auto")
 
 **Arguments:**
 
